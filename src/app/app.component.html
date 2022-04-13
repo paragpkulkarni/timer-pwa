@@ -1,45 +1,46 @@
-<style>
-  .center {
-    margin: auto;
-    width: 50%;
-    border: 5px solid #FFFF00;
-    padding: 10px;
-  }
+<div class="container">
+  <div class="row">
 
-  .large-tb {
-    font-size: large;
-    height: 60px;
-    width: 60px;
-  }
-</style>
+    <div class="col-md-8" role="main">
+
+      <div class="col">
+        <input type="number" min="0" max="24" style="width: 120px;" [(ngModel)]="hour">
+        :<input type="number" min="0" max="60" style="width: 120px;" [(ngModel)]="minute">
+        :<input type="number" min="0" max="60" style="width: 120px;" [(ngModel)]="second">
+      </div>
 
 
 
-<div class="center" role="main">
+
+
+      <div>
+        <input type="reset" value="Start"
+          [disabled]="timerInProgress || (this.hour == 0 && this.minute ==0 && this.second ==0)" class="btn btn-primary"
+          (click)="startTimer();" />
+        <input type="button" value="Reset" class="btn btn-secondary" (click)="resetForm();" />
+      </div>
+
+      <div>
+        <span *ngIf="timerFinished">Timer is finished</span>
+      </div>
+      <div>
+        <span>Start Time
+          {{this.startTime.getHours()}}:{{this.startTime.getMinutes()}}:{{this.startTime.getSeconds()}}</span>
+      </div>
+      <div>
+        <span>Duration
+          {{this.durationHour}}:{{this.durationMinute}}:{{this.durationSecond}}</span>
+      </div>
+      <div>
+        <span *ngIf="timerFinished">End Time
+          {{this.endTime.getHours()}}:{{this.endTime.getMinutes()}}:{{this.endTime.getSeconds()}}</span>
+      </div>
+
+
+    </div>
 
 
 
-  <input type="number" min="0" max="24" class="large-tb" [(ngModel)]="hour">
-  : <input type="number" min="0" max="60" class="large-tb" [(ngModel)]="minute">
-  : <input type="number" min="0" max="60" class="large-tb" [(ngModel)]="second">
-  <div>
-    <input type="reset" value="Start" (click)="startTimer();" />
-    <input type="button" value="Reset" (click)="resetForm();" />   
+    <router-outlet></router-outlet>
   </div>
-
-  <div>
-    <span *ngIf="timerFinished">Timer is finished</span>
-  </div>
-  <div>
-    <span>Start Time {{this.startTime.getHours()}}:{{this.startTime.getMinutes()}}:{{this.startTime.getSeconds()}}</span>
-  </div>
-  <div>
-    <span *ngIf="timerFinished">End Time {{this.endTime.getHours()}}:{{this.endTime.getMinutes()}}:{{this.endTime.getSeconds()}}</span>
-  </div>
-
-
-</div>
-
-
-
-<router-outlet></router-outlet>
+</div>s

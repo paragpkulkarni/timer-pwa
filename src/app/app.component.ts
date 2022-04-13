@@ -13,23 +13,31 @@ export class AppComponent {
   public minute: number = 0;
   public second: number = 0;
   public timerFinished: boolean = false;
+  public timerInProgress = false;
   public timerId: number = 0;
   public startTime: Date = new Date();
   public endTime: Date = new Date();
-
+  public durationHour: number = 0;
+  public durationMinute: number = 0;
+  public durationSecond: number = 0;
 
   public resetForm() {
-    clearInterval();
+    clearInterval(this.timerId);
 
     this.hour = 0;
     this.minute = 0;
     this.second = 0;
     this.timerFinished = false;
+    this.timerInProgress = false;
   }
 
   public startTimer() {
+    this.durationHour = this.hour;
+    this.durationMinute = this.minute;
+    this.durationSecond = this.second;
 
     let totalTime = ((this.hour * 60 * 60 * 1000) + (this.minute * 60 * 1000) + (this.second * 1000));
+    this.timerInProgress = true;
     this.startTime = new Date();
     this.timerFinished = false;
     if (totalTime > 0) {
@@ -42,19 +50,23 @@ export class AppComponent {
           this.playAudio();
         }
         else {
-          if (this.minute == 0 && this.hour > 0) {
-            this.minute = 60;
-            this.hour--;
-          }
-          if (this.second == 0 && this.minute > 0) {
-            this.second = 60;
-            this.minute--;
-          }
-          if (this.second > 0) {
-            this.second = this.second - 1;
-          }
+          this.CountDownLogic();
         }
       }, 1000);
+    }
+  }
+
+  private CountDownLogic() {
+    if (this.minute == 0 && this.hour > 0) {
+      this.minute = 60;
+      this.hour--;
+    }
+    if (this.second == 0 && this.minute > 0) {
+      this.second = 60;
+      this.minute--;
+    }
+    if (this.second > 0) {
+      this.second = this.second - 1;
     }
   }
 
