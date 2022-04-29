@@ -1,20 +1,51 @@
 <div class="container">
   <div class="row">
+    <div class="col-md-3">
+      <br />
+    </div>
+    <div class="col-md-6">
+      <br />
+    </div>
+    <div class="col-md-3">
+      <br />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
 
-    <div class="col-md-8" role="main">
+    </div>
+    <div class="col-md-6  text-center">
+      <input type="number" min="0" max="24" [(ngModel)]="hour">
+      :<input type="number" min="0" max="60" [(ngModel)]="minute">
+      :<input type="number" min="0" max="60" [(ngModel)]="second">
+    </div>
+    <div class="col-md-3">
 
-      <div class="col">
-        <input type="number" min="0" max="24" style="width: 120px;" [(ngModel)]="hour">
-        :<input type="number" min="0" max="60" style="width: 120px;" [(ngModel)]="minute">
-        :<input type="number" min="0" max="60" style="width: 120px;" [(ngModel)]="second">
-      </div>
-      <div>
-        <input type="reset" value="Start"
-          [disabled]="timerInProgress || (this.hour == 0 && this.minute ==0 && this.second ==0)" class="btn btn-primary"
-          (click)="startTimer();" />
-        <input type="button" value="Reset" class="btn btn-secondary" (click)="resetForm();" />
-      </div>
+    </div>
 
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-6  text-center">
+      <input type="reset" value="Start"
+        [disabled]="timerInProgress || (this.hour == 0 && this.minute ==0 && this.second ==0)" class="btn btn-primary"
+        (click)="startTimer();" />
+      <input type="button" value="Reset" class="btn btn-secondary" (click)="resetForm();" />
+    </div>
+    <div class="col-md-3">
+
+    </div>
+
+  </div>
+  <div class="row">
+
+    <div class="col-md-3">
+
+    </div>
+
+    <div class="col-md-6  text-center">
       <div>
         <span *ngIf="timerFinished">Timer is finished</span>
       </div>
@@ -31,6 +62,10 @@
           {{this.endTime.getHours()}}:{{this.endTime.getMinutes()}}:{{this.endTime.getSeconds()}}</span>
       </div>
     </div>
-    <router-outlet></router-outlet>
+    <div class="col-md-3">
+
+    </div>
   </div>
+  <router-outlet></router-outlet>
 </div>
+Upated on 29 APR
