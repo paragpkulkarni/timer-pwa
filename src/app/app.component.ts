@@ -42,16 +42,6 @@ export class AppComponent {
     this.timerFinished = false;
     if (totalTime > 0) {
       this.timerId = window.setInterval(() => {
-        // totalTime = totalTime - 1000;
-        // if (totalTime == 1000) {
-        //   this.resetForm();
-        //   this.endTime = new Date();
-        //   this.timerFinished = true;
-        //   this.playAudio();
-        // }
-        // else {
-        //   this.CountDownLogic();
-        // }
         this.TimerLogic(totalTime);
       }, 1000);
     }
