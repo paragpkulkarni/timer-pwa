@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1649844176980,
-  "index": "/timer-pwa/index.html",
+  "timestamp": 1651248432957,
+  "index": "/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "/timer-pwa/favicon.ico",
-        "/timer-pwa/index.html",
-        "/timer-pwa/main.82cd5bf65ad18f6e.js",
-        "/timer-pwa/manifest.webmanifest",
-        "/timer-pwa/polyfills.97392a40b7ebe806.js",
-        "/timer-pwa/runtime.b4cf291348ddc34d.js",
-        "/timer-pwa/styles.8d58886b09b054e5.css"
+        "/favicon.ico",
+        "/index.html",
+        "/main.932a6b24c5a8876d.js",
+        "/manifest.webmanifest",
+        "/polyfills.97392a40b7ebe806.js",
+        "/runtime.b4cf291348ddc34d.js",
+        "/styles.8d58886b09b054e5.css"
       ],
       "patterns": []
     },
@@ -29,37 +29,37 @@
         "ignoreVary": true
       },
       "urls": [
-        "/timer-pwa/assets/alarm.mp3",
-        "/timer-pwa/assets/icons/icon-128x128.png",
-        "/timer-pwa/assets/icons/icon-144x144.png",
-        "/timer-pwa/assets/icons/icon-152x152.png",
-        "/timer-pwa/assets/icons/icon-192x192.png",
-        "/timer-pwa/assets/icons/icon-384x384.png",
-        "/timer-pwa/assets/icons/icon-512x512.png",
-        "/timer-pwa/assets/icons/icon-72x72.png",
-        "/timer-pwa/assets/icons/icon-96x96.png"
+        "/assets/alarm.mp3",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/timer-pwa/assets/alarm.mp3": "a73704f3254aa4e314d08bf8c5542ee0a5bf509f",
-    "/timer-pwa/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "/timer-pwa/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "/timer-pwa/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "/timer-pwa/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "/timer-pwa/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/timer-pwa/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/timer-pwa/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "/timer-pwa/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/timer-pwa/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/timer-pwa/index.html": "4ee39dc68170919bc45fc51d8572b94ab53f6967",
-    "/timer-pwa/main.82cd5bf65ad18f6e.js": "bdf90aa5f612fe8cf3c04e26edb7ad2028b1856c",
-    "/timer-pwa/manifest.webmanifest": "69c69d69c59b35beeb5cfeda9f2478bd7dc4b9f1",
-    "/timer-pwa/polyfills.97392a40b7ebe806.js": "1ccdba39c555b27e9ac534dc34e2acbcc1aeb4f0",
-    "/timer-pwa/runtime.b4cf291348ddc34d.js": "f2576a1d02fd567a2676fcb92c2a2804ae3df229",
-    "/timer-pwa/styles.8d58886b09b054e5.css": "549524ebe6ab452f8e1087c521c7238dbe7ba7c4"
+    "/assets/alarm.mp3": "a73704f3254aa4e314d08bf8c5542ee0a5bf509f",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "9ae28ee361a086b26038d0d58b90a1c3dfa2adb6",
+    "/main.932a6b24c5a8876d.js": "3a99361d12750336548771dd5003487f7d5b65f4",
+    "/manifest.webmanifest": "91f6bcde7ed030abaa47a11baba1dd081d716503",
+    "/polyfills.97392a40b7ebe806.js": "1ccdba39c555b27e9ac534dc34e2acbcc1aeb4f0",
+    "/runtime.b4cf291348ddc34d.js": "f2576a1d02fd567a2676fcb92c2a2804ae3df229",
+    "/styles.8d58886b09b054e5.css": "549524ebe6ab452f8e1087c521c7238dbe7ba7c4"
   },
   "navigationUrls": [
     {
